@@ -11,11 +11,17 @@
   </head>
 
   <body>
-    <div>
-    	<a href="/" class="btn btn-default" role="button">Posts</a>
-    	<a href="/images" class="btn btn-default" role="button">Images</a>
-    </div>
+    <div class="container-fluid">
+      <div class="row"> 
+        <div class="col-md-12">
+        <ol class="breadcrumb">
+        	<a href="/" class="btn btn-default" role="button">Posts</a>
+        	<a href="/images" class="btn btn-default" role="button">Images</a>
+        </ol>
+        </div>
+      </div>
     	
     <%= yield %>
+    </div>
   </body>
 </html>
